@@ -1,0 +1,63 @@
+#include "ft_printf.h"
+
+int main()
+{
+	printf(" %d\n", printf("%010%"));
+	printf(" %d\n\n", ft_printf("%010%"));
+
+	printf(" %d\n", printf("%010w%"));
+	printf(" %d\n\n", ft_printf("%010w%"));
+
+	printf(" %d\n", printf("%010w%"));
+	printf(" %d\n\n", ft_printf("%010w%"));
+
+	printf(" %d\n", printf("%-10w%"));
+	printf(" %d\n\n", ft_printf("%-10w%"));
+
+	printf(" %d\n", printf("percent 1 %012%"));
+	printf(" %d\n\n", ft_printf("percent 1 %012%"));
+
+    printf(" %d\n", printf("percent 2 %12%"));
+    printf(" %d\n\n", ft_printf("percent 2 %12%"));
+
+	printf(" %d\n", printf("percent 3 %-12%"));
+    printf(" %d\n\n", ft_printf("percent 3 %-12%"));
+
+	printf(" %d\n", printf("percent 3 %-012%"));
+	printf(" %d\n\n", ft_printf("percent 3 %-012%"));
+
+	printf(" %d\n", printf("percent 4 %0%"));
+    printf(" %d\n\n", ft_printf("percent 4 %0%"));
+
+	printf(" %d\n", printf("percent 5 % %"));
+    printf(" %d\n\n", ft_printf("percent 5 % %"));
+
+	printf(" %d\n", printf("percent 6 % 15%"));
+    printf(" %d\n\n", ft_printf("percent 6 % 15%"));
+
+	printf(" %d\n", printf("percent 7 % 12%"));
+    printf(" %d\n\n", ft_printf("percent 7 % 12%"));
+
+	printf(" %d\n", printf("percent 8 %  *%", 13));
+    printf(" %d\n\n", ft_printf("percent 8 %  *%", 13));
+
+	printf(" %d\n", printf("percent 5 %- - -0%"));
+    printf(" %d\n\n", ft_printf("percent 5 %- - -0%"));
+
+	printf(" %d\n", printf("percent 5.5 %- - -8%"));
+    printf(" %d\n\n", ft_printf("percent 5.5 %- - -8%"));
+
+	printf(" %d\n", printf("percent 6 %0 - 0 12%"));
+    printf(" %d\n\n", ft_printf("percent 6 %0 - 0 12%"));
+
+	printf(" %d\n", printf("percent 7 %0 12%"));
+    printf(" %d\n\n", ft_printf("percent 7 %0 12%"));
+
+	printf(" %d\n", printf("percent 8 % 12.5%"));
+    printf(" %d\n\n", ft_printf("percent 8 % 12.5%"));
+
+	printf(" %d\n", printf("percent 8 %12.0%"));
+    printf(" %d\n\n", ft_printf("percent 8 %12.0%"));
+
+	return (0);
+}
