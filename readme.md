@@ -1,6 +1,6 @@
 <h1 align="center"> ft_printf </h1>
 <h4 align="center"> Because ft_putnbr() and ft_putstr() aren't enough </h4>
-###### [Description](#usage)
+
 
 ---
 
