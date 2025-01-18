@@ -1,7 +1,13 @@
 <h1 align="center"> ft_printf </h1>
 <h4 align="center"> Because ft_putnbr() and ft_putstr() aren't enough </h4>
 
-<h5 align="center"> [Description](#description) - [Usage](#usage) - [Tester](#tester) - [Warning](#warning) </h5>
+<h5 align="center">
+  <a href="#description">Description</a> - 
+  <a href="#usage">Usage</a> - 
+  <a href="#tester">Tester</a> - 
+  <a href="#warning">Warning</a>
+</h5>
+
 
 ---
 
@@ -10,7 +16,7 @@
 ##### The goal of this project is to code a library that contain a simplified version of printf.
 ###### This printf manage the following conversions:
 1. **%c** : print a single character
-2. **%s** : print a string
+2. **%s **: print a string
 3. **%p** : print pointer address (base 16)
 4. **%d** && **%i** : print a decimal (base 10)
 5. **%u** : print unsigned decimal (base 10)
