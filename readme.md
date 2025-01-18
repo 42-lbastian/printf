@@ -1,7 +1,7 @@
 <h1 align="center"> ft_printf </h1>
 <h4 align="center"> Because ft_putnbr() and ft_putstr() aren't enough </h4>
 
-###### [Description](#description)
+<h5 align="center"> [Description](#description) - [Usage](#usage) - [Tester](#tester) - [Warning](#warning) </h5>
 
 ---
 
@@ -10,7 +10,7 @@
 ##### The goal of this project is to code a library that contain a simplified version of printf.
 ###### This printf manage the following conversions:
 1. **%c** : print a single character
-2. **%s **: print a string
+2. **%s** : print a string
 3. **%p** : print pointer address (base 16)
 4. **%d** && **%i** : print a decimal (base 10)
 5. **%u** : print unsigned decimal (base 10)
@@ -26,7 +26,8 @@
 
 ---
 
-## Usage:
+<h2> Usage: </h2>
+
 ##### Requirements
 ###### This project is write in C and needs gcc  to be compiled and some standard libraries
 
@@ -60,6 +61,10 @@ bash test.sh
 	1. ft is ft_printf and nr is printf
 	2. look at the line error and look what test failed
 	3. if you are not sure about the test who failed, you can look at the **test_ft_printf.c**, every step are print
+
+###### for **l**, it will print on screen if there a leaks or not
+
+
 
 <h2> Warning: </h2>
 
