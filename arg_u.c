@@ -6,7 +6,7 @@
 /*   By: lbastian <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/10 13:41:03 by lbastian          #+#    #+#             */
-/*   Updated: 2020/04/20 13:50:23 by Bastian          ###   ########.fr       */
+/*   Updated: 2025/01/17 15:52:37 by lbastian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,14 +39,12 @@ static t_printf	*arg_u_exe(t_printf *list, long nb, t_list *inter, int size)
 t_printf		*arg_u(t_printf *list)
 {
 	long	nb;
-	long	i;
 	int		size;
 	t_list	*inter;
 
 	inter = list->str;
 	ft_lstdelone(list->str);
 	ft_lstdelone(list->str);
-	i = 1;
 	nb = va_arg(list->ap, int);
 	if (nb < 0)
 		nb = (UINT_MAX - ((nb + 1) * -1));

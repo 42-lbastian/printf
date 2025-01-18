@@ -6,7 +6,7 @@
 /*   By: Bastian <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/20 10:17:06 by Bastian           #+#    #+#             */
-/*   Updated: 2020/04/20 13:57:03 by Bastian          ###   ########.fr       */
+/*   Updated: 2025/01/17 15:53:02 by lbastian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,9 @@ static t_printf	*arg_d_as_z(t_printf *list)
 {
 	long	nb;
 	long	i;
-	int		size;
 
 	i = 1;
 	nb = va_arg(list->ap, int);
-	size = ft_intlen(nb);
 	if (nb < 0)
 	{
 		list->sp_type = 1;

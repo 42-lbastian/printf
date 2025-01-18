@@ -1,12 +1,12 @@
-make
+make -C ../
 
 echo "Test Vrac(v) - Leaks(l) - Flags(f) - Tout(t)"
 read rep
 
 if [ $rep = 'f' ] || [ $rep = 't' ]
 then
-	gcc test_printf.c libftprintf.a -o b.out
-	gcc test_ft_printf.c libftprintf.a -o c.out
+	gcc test_printf.c ../libftprintf.a -o b.out
+	gcc test_ft_printf.c ../libftprintf.a -o c.out
 	mkdir temp
 	mkdir result
 
@@ -53,8 +53,8 @@ then
 		rm -rf temp/*
 		rm -rf result/*
 	fi
-	gcc test_printf.c libftprintf.a -o b.out
-	gcc test_ft_printf.c libftprintf.a -o c.out
+	gcc test_printf.c ../libftprintf.a -o b.out
+	gcc test_ft_printf.c ../libftprintf.a -o c.out
 	mkdir temp
 	mkdir result
 
@@ -75,7 +75,7 @@ then
 
 	mkdir leaks
 
-	gcc test_leaks.c libftprintf.a -o b.out
+	gcc test_leaks.c ../libftprintf.a -o b.out
 
 	./b.out 1 1
 	grep -iR "leaks for" leaks/* > test1
@@ -90,7 +90,7 @@ then
 	./b.out -1234 1234
 	grep -iR "leaks for" leaks/* >> test1
 	clear
-	make fclean
+	make -C ../ fclean
 	rm -rf b.out
 	rm -rf leaks
 	cat test1
@@ -98,4 +98,4 @@ then
 
 fi
 
-make fclean
+make -C ../ fclean

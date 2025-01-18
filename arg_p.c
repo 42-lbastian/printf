@@ -6,7 +6,7 @@
 /*   By: lbastian <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/10 13:40:17 by lbastian          #+#    #+#             */
-/*   Updated: 2020/04/24 10:16:38 by Bastian          ###   ########.fr       */
+/*   Updated: 2025/01/18 16:26:16 by lbastian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,7 @@ static t_printf	*px(unsigned long long r, int *tab, t_printf *list, char *s)
 t_printf		*apx(t_printf *l, unsigned long long result, char *s, int sh)
 {
 	int		*tab;
-	int		index;
 
-	index = 0;
-	if (result < 0)
-		result = UINT_MAX - (((result + 1) * -1));
 	if (!(tab = malloc(sizeof(int) * sh)))
 	{
 		l->error = 1;
@@ -55,7 +51,7 @@ t_printf		*apx(t_printf *l, unsigned long long result, char *s, int sh)
 	return (l);
 }
 
-t_printf static	*arg_p_del(t_printf *list)
+static t_printf	*arg_p_del(t_printf *list)
 {
 	ft_lstdelone(list->str);
 	ft_lstdelone(list->str);

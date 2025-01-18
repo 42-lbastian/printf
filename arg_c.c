@@ -6,7 +6,7 @@
 /*   By: Bastian <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/25 15:00:40 by Bastian           #+#    #+#             */
-/*   Updated: 2020/04/25 18:45:46 by Bastian          ###   ########.fr       */
+/*   Updated: 2020/04/25 19:02:45 by Bastian          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,7 @@ t_printf	*arg_pour_2(t_printf *list)
 		if (list->sp_type == 0)
 			list->sp_char = '0';
 	}
+	ft_lstdelone(list->str);
 	return (list);
 }
 
@@ -75,13 +76,12 @@ t_printf	*arg_pour(t_printf *list)
 	ft_lstdelone(list->str);
 	while (is_v(list->str->next->content))
 	{
-		list = arg_pour_2(list);
 		if (list->str->next->content == '-')
 		{
 			list->sp_char = ' ';
 			list->sp_type = 1;
 		}
-		ft_lstdelone(list->str);
+		list = arg_pour_2(list);
 	}
 	c = list->str->next->content;
 	if (c != '%')
