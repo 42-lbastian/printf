@@ -1,10 +1,12 @@
 <h1 align="center"> ft_printf </h1>
 <h4 align="center"> Because ft_putnbr() and ft_putstr() aren't enough </h4>
 
+###### [Description](#usage)
 
 ---
 
 <h2> Description of the project: </h2>
+
 ##### The goal of this project is to code a library that contain a simplified version of printf.
 ###### This printf manage the following conversions:
 1. **%c** : print a single character
@@ -36,6 +38,7 @@ make
 ###### Just include **ft_printf.h** and add libftprintf.a during compilation of your code
 
 <h2> Tester: </h2>
+
 ##### I make my own tester it will compare ft_printf and printf with differents tests, just go to the test folder and run (don't worry about the warnings):
 ```shell
 bash test.sh
@@ -59,4 +62,5 @@ bash test.sh
 	3. if you are not sure about the test who failed, you can look at the **test_ft_printf.c**, every step are print
 
 <h2> Warning: </h2>
+
 ##### This ft_printf was written in a macOS environement so if you want to run it on linux, there are difference like null pointer (0x0 in macOS and (nil)) for example, but there are others. The leaks command used to test leaks in my tester exist only on macOS so this functionality will not work on linux.
