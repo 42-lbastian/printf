@@ -2,8 +2,8 @@
 <h4 align="center"> Because ft_putnbr() and ft_putstr() aren't enough </h4>
 
 <h5 align="center">
-  <a href="#description">Description</a> - 
-  <a href="#usage">Usage</a> - 
+  <a href="#description_id">Description</a> - 
+  <a href="#usage_id">Usage</a> - 
   <a href="#tester">Tester</a> - 
   <a href="#warning">Warning</a>
 </h5>
@@ -11,7 +11,7 @@
 
 ---
 
-<h2> Description of the project: </h2>
+<h2 id="description_id"> Description of the project: </h2>
 
 ##### The goal of this project is to code a library that contain a simplified version of printf.
 ###### This printf manage the following conversions:
@@ -32,7 +32,7 @@
 
 ---
 
-<h2> Usage: </h2>
+<h2 id="usage_id"> Usage: </h2>
 
 ##### Requirements
 ###### This project is write in C and needs gcc  to be compiled and some standard libraries
