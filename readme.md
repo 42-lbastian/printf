@@ -4,8 +4,8 @@
 <h5 align="center">
   <a href="#description_id">Description</a> - 
   <a href="#usage_id">Usage</a> - 
-  <a href="#tester">Tester</a> - 
-  <a href="#warning">Warning</a>
+  <a href="#tester_id">Tester</a> - 
+  <a href="#warning_id">Warning</a>
 </h5>
 
 
@@ -44,7 +44,7 @@ make
 ##### Usage:
 ###### Just include **ft_printf.h** and add libftprintf.a during compilation of your code
 
-<h2> Tester: </h2>
+<h2 id="tester_id"> Tester: </h2>
 
 ##### I make my own tester it will compare ft_printf and printf with differents tests, just go to the test folder and run (don't worry about the warnings):
 ```shell
@@ -72,6 +72,6 @@ bash test.sh
 
 
 
-<h2> Warning: </h2>
+<h2 id="warning_id"> Warning: </h2>
 
 ##### This ft_printf was written in a macOS environement so if you want to run it on linux, there are difference like null pointer (0x0 in macOS and (nil)) for example, but there are others. The leaks command used to test leaks in my tester exist only on macOS so this functionality will not work on linux.
