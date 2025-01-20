@@ -16,7 +16,7 @@
 ##### The goal of this project is to code a library that contain a simplified version of printf.
 ###### This printf manage the following conversions:
 1. **%c** : print a single character
-2. **%s **: print a string
+2. **%s** : print a string
 3. **%p** : print pointer address (base 16)
 4. **%d** && **%i** : print a decimal (base 10)
 5. **%u** : print unsigned decimal (base 10)
