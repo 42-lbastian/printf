@@ -15,20 +15,20 @@
 
 ##### The goal of this project is to code a library that contain a simplified version of printf.
 ###### This printf manage the following conversions:
-1. **%c** : print a single character
-2. **%s** : print a string
-3. **%p** : print pointer address (base 16)
-4. **%d** && **%i** : print a decimal (base 10)
-5. **%u** : print unsigned decimal (base 10)
-6. **%x** : print number in lowercase (base 16)
-7. **%X** : print number in uppercase (base 16)
-8. **%%** : print percent sign
+-  **%c** : print a single character
+-  **%s** : print a string
+-  **%p** : print pointer address (base 16)
+-  **%d** && **%i** : print a decimal (base 10)
+-  **%u** : print unsigned decimal (base 10)
+-  **%x** : print number in lowercase (base 16)
+-  **%X** : print number in uppercase (base 16)
+-  **%%** : print percent sign
 
 ###### This printf manage the following flags:
-1. **\*** : to pass the width
-2. **0** : pad zeros
-3. **\-** : left justify
-4. **.** :  crop the following conversion
+-  **\*** : to pass the width-
+-  **0** : pad zeros
+-  **\-** : left justify
+-  **.** :  crop the following conversion
 
 ---
 
@@ -51,22 +51,22 @@ make
 bash test.sh
 ```
 ##### You have 4 differents mode:
-1. **v** : to test some strange stuff
-2. **l** : to test the leaks of ft_printf
-3. **f** : regular test of all flags and convertions, to play with precision it will ask for 3 arguments:
-	1. start : a width parameter
-	2. end : another width parameter
-	3. pas : step between the start and end for other tests
-4. **t** : run all tests (**v l f**)
+-  **v** : to test some strange stuff
+-  **l** : to test the leaks of ft_printf
+-  **f** : regular test of all flags and convertions, to play with precision it will ask for 3 arguments:
+  	- start : a width parameter
+  	- end : another width parameter
+  	- pas : step between the start and end for other tests
+-  **t** : run all tests (**v l f**)
 
 ##### Reading the result:
 ###### for **v** and **f**:
-1. first look to result folder, if there is nothing, all good. 
-2. Else open one of the text file in result, the two last numbers are the start and the end, it will give you a line number and the error.
-3. open, in the temp folder the two file with the same numbers, named pri_ft and pri_nr
-	1. ft is ft_printf and nr is printf
-	2. look at the line error and look what test failed
-	3. if you are not sure about the test who failed, you can look at the **test_ft_printf.c**, every step are print
+-  first look to result folder, if there is nothing, all good.
+-  Else open one of the text file in result, the two last numbers are the start and the end, it will give you a line number and the error.
+-  Open, in the temp folder the two file with the same numbers, named pri_ft and pri_nr
+  	- ft is ft_printf and nr is printf
+	- look at the line error and look what test failed
+	- if you are not sure about the test who failed, you can look at the **test_ft_printf.c**, every step are print
 
 ###### for **l**, it will print on screen if there a leaks or not
 
